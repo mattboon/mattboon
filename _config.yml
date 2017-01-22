@@ -10,7 +10,7 @@ title: Matt Berridge - Freelance front end developer based in Berlin
 description: > # this means to ignore newlines until "baseurl:"
   I’m a freelance front end developer> based in Berlin with a background in modular CSS architecture, but who writes mostly JavaScript these days. I've also got a pretty good eye for design both on and off the web.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://mattboon.com" # the base hostname & protocol for your site
+url: "https://mattberridge.github.io" # the base hostname & protocol for your site
 
 # Markdown settings
 markdown: kramdown
