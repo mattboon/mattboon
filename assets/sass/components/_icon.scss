@@ -1,0 +1,13 @@
+.icon {
+  display: inline-block;
+  fill: color('main');
+}
+
+.icon--small {
+  height: 36px;
+  width: 36px;
+}
+
+.icon--centered {
+  @include centered;
+}

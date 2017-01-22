@@ -1,0 +1,36 @@
+.social-buttons {
+  margin-left: -2px;
+  margin-right: -2px;
+}
+
+.social-buttons--centered {
+  text-align: center;
+}
+
+.social-buttons__item {
+  display: inline-block;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.social-buttons__platform {
+  @include hide;
+}
+
+.social-buttons__link {
+  display: block;
+  position: relative;
+  width: 52px;
+  height: 52px;
+  border: 2px solid color('main');
+  overflow: hidden;
+}
+
+.social-buttons__link:hover {
+  border-color: #35D8A4;
+  background-color: color('highlight');
+}
+
+.social-buttons__link:hover .icon {
+  fill: white;
+}

@@ -1,0 +1,24 @@
+{
+  "name": "mattboon",
+  "version": "1.0.0",
+  "description": "Portfolio and CV.",
+  "main": "index.js",
+  "scripts": {
+    "svgs": "svgo -f assets/images/icons && ./node_modules/spritesh/bin/spritesh --input assets/images/icons --output assets/images/icons/sprite.svg",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattberridge/mattboon.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mattberridge/mattboon/issues"
+  },
+  "homepage": "https://github.com/mattberridge/mattboon#readme",
+  "devDependencies": {
+    "spritesh": "^1.2.0",
+    "svgo": "^0.7.1"
+  }
+}

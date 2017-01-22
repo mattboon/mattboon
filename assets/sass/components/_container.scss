@@ -1,0 +1,9 @@
+.container {
+  @include container;
+  max-width: 700px;
+}
+
+.container--padding {
+  padding-left: spacing('container');
+  padding-right: spacing('container');
+}

@@ -1,0 +1,20 @@
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+@function spacing($spacing-name) {
+  @return map-get($spacing, $spacing-name);
+}
+
+@function strip-unit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+
+  @return $number;
+}
+
+@function px-equals-percent($pixels, $percentage) {
+  $pct: strip-unit($pixels) / strip-unit($percentage);
+  @return #{ceil($pct * 100)}px;
+}
