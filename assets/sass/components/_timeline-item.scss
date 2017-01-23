@@ -65,19 +65,19 @@ $padding-left: 40px;
 
 .timeline-item__date--start {
   top: 0;
-  transform: translateY(-50%);  
+  @include transform(translateY(-50%));
 }
 
 .timeline-item__date--end {
   top: auto;
   bottom: 0;
-  transform: translateY(50%);  
+  @include transform(translateY(50%));
 }
 
 .timeline-item__date::before {
   width: $bullet-size;
   height: $bullet-size;
-  transform: rotate(28deg) translate(-11px, -$line-width);
+  @include transform(rotate(28deg) translate(-11px, -$line-width));
   position: absolute;
   left: $left-spacing;
   top: 50%;

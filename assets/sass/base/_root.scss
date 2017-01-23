@@ -35,8 +35,8 @@ body::before {
   top: -200px;
   z-index: -1; 
   right: 40%;
-  transform: skewY(-7deg);
-  transform-origin: bottom right;
+  @include transform(skewY(-7deg));
+  @include transform-origin(bottom right);
   border-bottom: 10px solid color('lighten');
 }
 
@@ -46,8 +46,8 @@ body::after {
   top: -70px;
   z-index: -2; 
   left: 0;
-  transform: skewY(5deg);
-  transform-origin: 100px;
+  @include transform(skewY(5deg));
+  @include transform-origin(100px);
   border-top: 10px solid color('darken');
 }
 

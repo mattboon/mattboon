@@ -27,11 +27,6 @@ sass:
 # Server Config options
 livereload: true
 
-# Autoprefixing
-autoprefixer:
-  browsers:
-  - last 5 versions
-
 # Build settings
 exclude:
   - Gemfile
@@ -45,4 +40,4 @@ exclude:
 gems:
   - jekyll-feed
   - jekyll-sitemap
-  - jekyll-autoprefixer
+  - bourbon

@@ -14,26 +14,26 @@
 
 .intro-block__wrap {
   @include media('>700px') {
-    display: flex;
+    @include display(flex);
   }
 }
 
 .intro-block__content {
-  flex: 1;
+  @include flex(1);
   max-width: 700px;
   margin-right: 40px;
 }
 
 .intro-block__aside {
   @include media('<=700px') {
-    display: flex;
-    align-items: center;
+    @include display(flex);
+    @include align-items(center);
   }
 
   @include media('>700px') {
     max-width: 120px;
     text-align: center;
-    flex: 1;
+    @include flex(1);
     margin-left: auto;
   }
 
