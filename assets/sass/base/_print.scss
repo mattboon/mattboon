@@ -1,0 +1,108 @@
+@media print {
+  * {
+    -webkit-print-color-adjust: exact;
+  }
+
+  html {
+    font-size: 13px;
+  }
+
+  h1 {
+    margin-bottom: 0.25em;
+  }
+
+  .heading {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+  }
+
+  .heading span::after {
+    height: 15px;
+  }
+
+  a {
+    border-bottom: none;
+  }
+
+  p {
+    margin-bottom: 15px;
+  }
+
+  dl {
+    margin-bottom: 0;
+  }
+
+  dt {
+    width: auto;
+    display: none;
+  }
+
+  dd {
+    float: none;
+    margin-bottom: 0;
+    display: block;
+  }
+
+  .section {
+    margin-top: 1.15cm;
+  }
+
+  .date {
+    font-size: 13px;
+  }
+
+  .hgroup__subtitle {
+    margin-bottom: 0.5em;
+  }
+
+  .timeline-item {
+    padding-top: 0;
+    padding-left: 0.375cm;
+    padding-right: 0;
+  }
+
+  .timeline-item--first {
+    margin-top: 1.5cm;
+  }
+
+  .timeline-item__inner {
+    padding-top: 0;
+    padding-bottom: 0.35cm;
+    padding-left: 3cm;
+  }
+
+  .timeline-item__inner::before {
+    width: 6px;
+  }
+
+  .timeline-item__date::before {
+    width: 16px;
+    height: 16px;
+  }
+
+  .intro {
+    margin-left: 3.5cm;
+  }
+
+  .intro-text {
+    max-width: 100%;
+  }
+
+  .intro-block {
+    margin-bottom: 2.5em;
+  }
+
+  .page {
+    padding-top: 12vw;
+    padding-bottom: 0;
+  }
+
+  #references {
+    @include clearfix;
+  }
+
+  #references .cv-item {
+    float: left;
+    width: 50%;
+  }
+}
