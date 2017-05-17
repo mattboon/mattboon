@@ -17,38 +17,8 @@ html {
   font-weight: 300;
   line-height: 1.55;
   letter-spacing: 0.2px;
-  color: color('main'); 
-  overflow-y: scroll; 
-}
-
-body::before,
-body::after {
-  display: block;
-  content: '';
-  width: 100%;  
-  position: absolute;
-}
-
-body::before {
-  height: 200px;
-  background-color: color('main');
-  top: -200px;
-  z-index: -1; 
-  right: 40%;
-  @include transform(skewY(-7deg));
-  @include transform-origin(bottom right);
-  border-bottom: 10px solid color('lighten');
-}
-
-body::after {
-  height: 100px;
-  background-color: color('highlight');
-  top: -70px;
-  z-index: -2; 
-  left: 0;
-  @include transform(skewY(5deg));
-  @include transform-origin(100px);
-  border-top: 10px solid color('darken');
+  color: color('main');
+  overflow-y: scroll;
 }
 
 a {
