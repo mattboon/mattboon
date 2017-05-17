@@ -4,7 +4,7 @@
       <a href="{{ icon.url }}" class="social-buttons__link">
         <span class="social-buttons__platform">{{ icon.title }}</span>
         <svg class="icon icon--small icon--centered">
-          <use xlink:href="{{ "/assets/images/icons/sprite.svg#" | append: icon.id | prepend: site.baseurl }}" />
+          <use xlink:href="{{ "#" | append: icon.id | prepend: site.baseurl }}" />
         </svg>
       </a>
     </li>

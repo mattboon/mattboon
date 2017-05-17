@@ -4,7 +4,7 @@
   "description": "Portfolio and CV.",
   "main": "index.js",
   "scripts": {
-    "svgs": "svgo -f assets/images/icons && ./node_modules/spritesh/bin/spritesh --input assets/images/icons --output assets/images/icons/sprite.svg",
+    "svgs": "svgo -f assets/images/icons && ./node_modules/spritesh/bin/spritesh --input assets/images/icons --output _includes/icon-sprite.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
