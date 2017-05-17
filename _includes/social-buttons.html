@@ -1,50 +1,12 @@
 <ul class="social-buttons">
-  <li class="social-buttons__item">
-    <a href="https://twitter.com/mattberridge" class="social-buttons__link">
-      <span class="social-buttons__platform">Twitter</span>
-      <svg class="icon icon--small icon--centered">
-        <use xlink:href="{{ "/assets/images/icons/sprite.svg#twitter" | prepend: site.baseurl }}" />
-      </svg>
-    </a>
-  </li>
-  <li class="social-buttons__item">
-    <a href="https://github.com/mattboon" class="social-buttons__link">
-      <span class="social-buttons__platform">Github</span>
-      <svg class="icon icon--small icon--centered">
-        <use xlink:href="{{ "/assets/images/icons/sprite.svg#github" | prepend: site.baseurl }}" />
-      </svg>
-    </a>
-  </li>
-  <li class="social-buttons__item">
-    <a href="http://linkedin.com/in/mattakaboon" class="social-buttons__link">
-      <span class="social-buttons__platform">LinkedIn</span>
-      <svg class="icon icon--small icon--centered">
-        <use xlink:href="{{ "/assets/images/icons/sprite.svg#linkedin" | prepend: site.baseurl }}" />
-      </svg>
-    </a>
-  </li>
-  <li class="social-buttons__item">
-    <a href="https://instagram.com/boon" class="social-buttons__link">
-      <span class="social-buttons__platform">Instagaram</span>
-      <svg class="icon icon--small icon--centered">
-        <use xlink:href="{{ "/assets/images/icons/sprite.svg#instagram" | prepend: site.baseurl }}" />
-      </svg>
-    </a>
-  </li>
-  <li class="social-buttons__item">
-    <a href="https://soundcloud.com/mattboon" class="social-buttons__link">
-      <span class="social-buttons__platform">Soundcloud</span>
-      <svg class="icon icon--small icon--centered">
-        <use xlink:href="{{ "/assets/images/icons/sprite.svg#soundcloud" | prepend: site.baseurl }}" />
-      </svg>
-    </a>
-  </li>
-  <li class="social-buttons__item">
-    <a href="skype:boonmattberridge?call" class="social-buttons__link">
-      <span class="social-buttons__platform">Skype</span>
-      <svg class="icon icon--small icon--centered">
-        <use xlink:href="{{ "/assets/images/icons/sprite.svg#skype" | prepend: site.baseurl }}" />
-      </svg>
-    </a>
-  </li>
+  {% for icon in site.social-icons %}
+    <li class="social-buttons__item">
+      <a href="{{ icon.url }}" class="social-buttons__link">
+        <span class="social-buttons__platform">{{ icon.title }}</span>
+        <svg class="icon icon--small icon--centered">
+          <use xlink:href="{{ "/assets/images/icons/sprite.svg#" | append: icon.id | prepend: site.baseurl }}" />
+        </svg>
+      </a>
+    </li>
+  {% endfor %}
 </ul>
