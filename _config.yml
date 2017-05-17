@@ -11,6 +11,25 @@ description: > # this means to ignore newlines until "baseurl:"
   I’m a freelance front end developer> based in Berlin with a background in modular CSS architecture, but who writes mostly JavaScript these days. I've also got a pretty good eye for design both on and off the web.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://mattberridge.github.io" # the base hostname & protocol for your site
+social-icons:
+  - title: Twitter
+    url: https://twitter.com/mattberridge
+    id: twitter
+  - title: Github
+    url: https://github.com/mattboon
+    id: github
+  - title: LinkedIn
+    url: http://linkedin.com/in/mattakaboon
+    id: linkedin
+  - title: Instagram
+    url: https://instagram.com/boon
+    id: instagram
+  - title: Soundcloud
+    url: https://soundcloud.com/mattboon
+    id: soundcloud
+  - title: Skype
+    url: skype:boonmattberridge?call
+    id: skype  
 
 # Markdown settings
 markdown: kramdown
