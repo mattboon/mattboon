@@ -1,9 +1,11 @@
 $breakpoints: (
-  'small': 500px
+  'small': 500px,
+  'medium': 800px,
+  'large': 1000px
 );
 
 $colors: (
-  'main': #262c33, 
+  'main': #262c33,
   'highlight': #38e4ae,
   'grey': #7f7f7F,
   'lighten': rgba(255, 255, 255, 0.055),

@@ -7,16 +7,16 @@ $timeline-tweakpoint: px-equals-percent(60px, 6%);
 .timeline-item {
   @include container(1100px);
 
-  @include media('<=800px') {
+  @include media('<=medium') {
     padding-left: 2%;
   }
 
-  @include media('>800px', '<=1000px') {
+  @include media('>medium', '<=large') {
     padding-left: 3%;
     padding-right: 3%;
   }
 
-  @include media('>1000px') {
+  @include media('>large') {
     padding-left: 2em;
     padding-right: 2em;
   }

@@ -1,9 +1,9 @@
 .kicker-block {
-  @include media('<=500px') {
+  @include media('<=small') {
     font-size: 90%;
   }
 
-  @include media('>1000px') {
+  @include media('>large') {
     margin-left: -11em;
   }
 }
@@ -13,7 +13,7 @@
 }
 
 .kicker-block__wrap {
-  @include media('>700px') {
+  @include media('>medium') {
     @include display(flex);
   }
 }
@@ -25,27 +25,27 @@
 }
 
 .kicker-block__aside {
-  @include media('<=700px') {
+  @include media('<=medium') {
     @include display(flex);
     @include align-items(center);
   }
 
-  @include media('>700px') {
+  @include media('>medium') {
     max-width: 120px;
     text-align: center;
     @include flex(1);
     margin-left: auto;
   }
 
-  @include media('>1000px') {
+  @include media('>large') {
     position: relative;
     right: -4.5em;
   }
 }
 
 .kicker-block__aside .social-buttons {
-  @include media('<=700px') {
-    max-width: 200px;
+  @include media('<=medium') {
+    max-width: 10em;
     margin-top: 0.75em;
     margin-right: 0.5em;
   }
