@@ -1,7 +1,7 @@
 <ul class="social-buttons">
   {% for icon in site.social-icons %}
     <li class="social-buttons__item">
-      <a href="{{ icon.url }}" class="social-buttons__link">
+      <a href="{{ icon.url }}" class="social-buttons__link" data-print-text="{{ icon.print-text }}">
         <span class="social-buttons__platform">{{ icon.title }}</span>
         <svg class="icon icon--small icon--centered">
           <use xlink:href="{{ "#" | append: icon.id | prepend: site.baseurl }}" />

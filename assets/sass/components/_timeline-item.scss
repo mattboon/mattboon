@@ -1,7 +1,8 @@
-$bullet-size: 20px;
-$left-spacing: $bullet-size / 2;
-$line-width: 8px;
-$padding-left: 40px;
+$timeline-bullet-size: 20px;
+$timeline-left-spacing: $timeline-bullet-size / 2;
+$timeline-line-width: 8px;
+$timeline-padding-left: 40px;
+$timeline-tweakpoint: px-equals-percent(60px, 6%);
 
 .timeline-item {
   @include container(1100px);
@@ -16,30 +17,29 @@ $padding-left: 40px;
   }
 
   @include media('>1000px') {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 2em;
+    padding-right: 2em;
   }
 }
 
 .timeline-item--first {
-  margin-top: 60px;
+  margin-top: 3em;
 }
 
 .timeline-item__inner {
   position: relative;
 
-  $tweakpoint: px-equals-percent(60px, 6%);
 
-  @include media('<=#{$tweakpoint}') {
-    padding-left: $padding-left - spacing('container');
+  @include media('<=#{$timeline-tweakpoint}') {
+    padding-left: $timeline-padding-left - spacing('container');
   }
 
-  @include media('<=#{$tweakpoint}') {
-    padding-top: 60px;
-    padding-bottom: 60px;
+  @include media('<=#{$timeline-tweakpoint}') {
+    padding-top: 3em;
+    padding-bottom: 3em;
   }
 
-  @include media('>#{$tweakpoint}') {
+  @include media('>#{$timeline-tweakpoint}') {
     padding-bottom: 6%;
     padding-top: 6%;
   }
@@ -48,19 +48,19 @@ $padding-left: 40px;
 .timeline-item__inner::before {
   content: '';
   display: block;
-  width: $line-width;
+  width: $timeline-line-width;
   height: 100%;
   background-color: color('main');
   position: absolute;
   top: 0;
-  left: $left-spacing;
+  left: $timeline-left-spacing;
 }
 
 .timeline-item__date {
   display: block;
   position: absolute;
   left: 0;
-  padding-left: $padding-left;
+  padding-left: $timeline-padding-left;
 }
 
 .timeline-item__date--start {
@@ -75,11 +75,11 @@ $padding-left: 40px;
 }
 
 .timeline-item__date::before {
-  width: $bullet-size;
-  height: $bullet-size;
-  @include transform(rotate(28deg) translate(-11px, -$line-width));
+  width: $timeline-bullet-size;
+  height: $timeline-bullet-size;
+  @include transform(rotate(28deg) translate(-11px, -$timeline-line-width));
   position: absolute;
-  left: $left-spacing;
+  left: $timeline-left-spacing;
   top: 50%;
   content: '';
   display: block;
