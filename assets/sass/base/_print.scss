@@ -3,6 +3,12 @@ $print-text-indent: 3cm;
 $print-section-spacing: 1.15cm;
 $print-text-size: 12.5px;
 
+@media screen {
+  .short-info {
+    display: none;
+  }
+}
+
 @media print {
   * {
     -webkit-print-color-adjust: exact;
@@ -24,16 +30,45 @@ $print-text-size: 12.5px;
     margin-bottom: 15px;
   }
 
-  dl {
+  p a::after {
+    font-size: 0.75em;
+    content: ' — 'attr(data-print-text)' — ';
+    color: color('grey');
+  }
+
+  .intro {
+    position: relative;
+  }
+
+  .short-info {
+    font-size: 0.825em;
+    position: absolute;
+    left: $print-left-indent;
+    top: 0;
+  }
+
+  .short-info__title {
+    display: block;
+    font-weight: bold;
+    float: none;
     margin-bottom: 0;
   }
 
-  dt {
+  .short-info__text {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+  }
+
+  .contact-list {
+    margin-bottom: 0;
+  }
+
+  .contact-list__title {
     width: auto;
     display: none;
   }
 
-  dd {
+  .contact-list__text {
     float: none;
     margin-bottom: 0;
     display: block;
@@ -114,12 +149,6 @@ $print-text-size: 12.5px;
 
   #references .cv-item:first-child {
     width: 60%;
-  }
-
-  #experience a::after {
-    font-size: 0.75em;
-    content: ' — 'attr(data-print-text)' — ';
-    color: color('grey');
   }
 
   .page--profile .social-buttons__link {
