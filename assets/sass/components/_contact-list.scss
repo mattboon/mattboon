@@ -1,0 +1,15 @@
+.contact-list {
+  overflow: hidden;
+  margin-bottom: 2.5em;
+}
+
+.contact-list__title,
+.contact-list__text {
+  float: left;
+  margin-bottom: 0.25em;
+}
+
+.contact-list__title {
+  clear: left;
+  width: 5em;
+}
