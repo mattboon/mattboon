@@ -6,6 +6,7 @@
 @import 'base/functions';
 @import 'base/mixins';
 @import 'base/root';
+@import 'base/border';
 @import 'base/helpers';
 
 @import 'components/page';
@@ -17,6 +18,8 @@
 @import 'components/hgroup';
 @import 'components/social-buttons';
 @import 'components/icon';
-@import 'components/intro-block';
+@import 'components/kicker-block';
 @import 'components/intro-text';
 @import 'components/splash';
+
+@import 'base/print';

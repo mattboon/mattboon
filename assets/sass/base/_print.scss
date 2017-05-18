@@ -1,0 +1,150 @@
+$print-left-indent: 0.5cm;
+$print-text-indent: 3cm;
+$print-section-spacing: 1.15cm;
+$print-text-size: 12.5px;
+
+@media print {
+  * {
+    -webkit-print-color-adjust: exact;
+  }
+
+  html {
+    font-size: $print-text-size;
+  }
+
+  h1 {
+    margin-bottom: 0.25em;
+  }
+
+  a {
+    border-bottom: none;
+  }
+
+  p {
+    margin-bottom: 15px;
+  }
+
+  dl {
+    margin-bottom: 0;
+  }
+
+  dt {
+    width: auto;
+    display: none;
+  }
+
+  dd {
+    float: none;
+    margin-bottom: 0;
+    display: block;
+  }
+
+  .section {
+    margin-top: $print-section-spacing;
+  }
+
+  .heading {
+    font-size: 2.375em;
+    margin-bottom: 1em;
+  }
+
+  .heading span::after {
+    height: 15px;
+  }
+
+  .date {
+    font-size: inherit;
+  }
+
+  .hgroup__subtitle {
+    margin-bottom: 0.5em;
+  }
+
+  .timeline-item {
+    padding-top: 0;
+    padding-right: 0;
+    padding-left: $print-left-indent;
+  }
+
+  .timeline-item--first {
+    margin-top: $print-section-spacing;
+  }
+
+  .timeline-item__inner {
+    padding-top: 0;
+    padding-bottom: 0.35cm;
+    padding-left: $print-text-indent;
+  }
+
+  .timeline-item__inner::before {
+    width: 6px;
+  }
+
+  .timeline-item__date::before {
+    width: 16px;
+    height: 16px;
+  }
+
+  .section__content,
+  .intro {
+    padding-left: $print-left-indent + $print-text-indent;
+  }
+
+  .intro-text {
+    max-width: 100%;
+  }
+
+  .kicker-block--push {
+    margin-bottom: 1cm;
+  }
+
+  .page {
+    padding-top: 12vw;
+    padding-bottom: 0;
+  }
+
+  #references {
+    @include clearfix;
+  }
+
+  #references .cv-item {
+    float: left;
+    width: 40%;
+  }
+
+  #references .cv-item:first-child {
+    width: 60%;
+  }
+
+  .page--profile .social-buttons__link {
+    width: 34px;
+    height: 34px;
+    overflow: visible;
+  }
+
+  .page--profile .social-buttons__link .icon--small {
+    width: 26px;
+    height: 26px;
+  }
+
+  .page--profile .social-buttons__link::after {
+    font-size: 12px;
+    position: absolute;
+    left: 100%;
+    margin-left: 1em;
+    top: 50%;
+    transform: translateY(-50%);
+    content: attr(data-print-text);
+  }
+
+  .page--profile .social-buttons {
+    @include clearfix;
+  }
+
+  .page--profile .social-buttons__item {
+    display: block;
+    margin: 0 0 0.5em 0;
+    width: 50%;
+    float: left;
+  }
+}

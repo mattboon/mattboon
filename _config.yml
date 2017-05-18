@@ -14,22 +14,28 @@ url: "https://mattberridge.github.io" # the base hostname & protocol for your si
 social-icons:
   - title: Twitter
     url: https://twitter.com/mattberridge
+    print-text: twitter.com/mattberridg
     id: twitter
   - title: Github
     url: https://github.com/mattboon
+    print-text: github.com/mattboon
     id: github
   - title: LinkedIn
     url: http://linkedin.com/in/mattakaboon
+    print-text: linkedin.com/in/mattakaboon
     id: linkedin
   - title: Instagram
     url: https://instagram.com/boon
+    print-text: instagram.com/boon
     id: instagram
   - title: Soundcloud
     url: https://soundcloud.com/mattboon
+    print-text: soundcloud.com/mattboon
     id: soundcloud
   - title: Skype
     url: skype:boonmattberridge?call
-    id: skype  
+    print-text: boonmattberridge
+    id: skype
 
 # Markdown settings
 markdown: kramdown
