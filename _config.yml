@@ -14,7 +14,7 @@ url: "https://mattberridge.github.io" # the base hostname & protocol for your si
 social-icons:
   - title: Twitter
     url: https://twitter.com/mattberridge
-    print-text: twitter.com/mattberridg
+    print-text: twitter.com/mattberridge
     id: twitter
   - title: Github
     url: https://github.com/mattboon
