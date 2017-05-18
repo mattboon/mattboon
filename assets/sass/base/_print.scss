@@ -151,18 +151,31 @@ $print-text-size: 12.5px;
     width: 60%;
   }
 
-  .page--profile .social-buttons__link {
+  .kicker-block__aside {
+    width: 100%;
+  }
+
+  .kicker-block__aside p {
+    display: none;
+  }
+
+  .kicker-block__aside .social-buttons {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .social-buttons__link {
     width: 34px;
     height: 34px;
     overflow: visible;
   }
 
-  .page--profile .social-buttons__link .icon--small {
+  .social-buttons__link .icon--small {
     width: 26px;
     height: 26px;
   }
 
-  .page--profile .social-buttons__link::after {
+  .social-buttons__link::after {
     font-size: 12px;
     position: absolute;
     left: 100%;
@@ -172,11 +185,11 @@ $print-text-size: 12.5px;
     content: attr(data-print-text);
   }
 
-  .page--profile .social-buttons {
+  .social-buttons {
     @include clearfix;
   }
 
-  .page--profile .social-buttons__item {
+  .social-buttons__item {
     display: block;
     margin: 0 0 0.5em 0;
     width: 50%;
