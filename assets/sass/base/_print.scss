@@ -116,6 +116,12 @@ $print-text-size: 12.5px;
     width: 60%;
   }
 
+  #experience a::after {
+    font-size: 0.75em;
+    content: ' — 'attr(data-print-text)' — ';
+    color: color('grey');
+  }
+
   .page--profile .social-buttons__link {
     width: 34px;
     height: 34px;
