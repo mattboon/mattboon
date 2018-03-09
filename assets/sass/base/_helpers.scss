@@ -13,21 +13,6 @@
   text-align: center;
 }
 
-.avatar {
-  float: right;
-  
-  @include media('>small', '<=large') {
-    max-width: 150px;
-    margin-right: -25px;
-  }
-
-  @include media('>large') {    
-    margin-right: -32%;
-    margin-top: -150px;
-    max-width: 250px;
-  }
-}
-
 .push-top {
   margin-top: 1em;
 }

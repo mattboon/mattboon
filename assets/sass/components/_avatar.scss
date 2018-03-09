@@ -1,0 +1,33 @@
+.avatar {
+  position: relative;
+}
+
+.avatar__img {
+  position: absolute;
+  
+  @include media('<=medium') {
+    top: 20px;
+    right: 0;
+    width: 30%;
+  }
+
+  @include media('>medium') {
+    top: 50px;
+    right: -8%;
+  }
+
+  @include media('<=small') {
+    min-width: 120px;
+    max-width: 120px;
+  }
+  
+  @include media('>small', '<=large') {
+    min-width: 130px;
+    max-width: 170px;
+  }  
+
+  @include media('>large') {  
+    max-width: 250px;
+    right: -16%;
+  }  
+}
